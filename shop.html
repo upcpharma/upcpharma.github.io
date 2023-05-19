@@ -22,14 +22,9 @@
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#product1, #product2, #product3').click(function(event) {
-                event.preventDefault();
-                window.location.href = $(this).attr("href");
-            });
-        });
-    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 
 </head>
 
@@ -63,21 +58,20 @@
                                 <li><a href="index.html">Home</a></li>
                                 <li class="active"><a href="shop.html">Products</a></li>
                                 <li class="has-children">
-                                    <a href="#">Health Products</a>
-                                    <ul class="dropdown">
-                                        <li><a href="#">Supplements</a></li>
+                                    <a href="">Health Products</a>
+                                    <ul class="dropdown disabled">
+                                        <li><a href="">Supplements</a></li>
                                         <li class="has-children">
-                                            <a href="#">Vitamins</a>
+                                            <a href="">Vitamins</a>
                                             <ul class="dropdown">
-                                                <li><a href="#">Supplements</a></li>
-                                                <li><a href="#">Vitamins</a></li>
-                                                <li><a href="#">Diet &amp; Nutrition</a></li>
-                                                <li><a href="#">Tea &amp; Coffee</a></li>
+                                                <li><a href="">Supplements</a></li>
+                                                <li><a href="">Vitamins</a></li>
+                                                <li><a href="">Diet &amp; Nutrition</a></li>
+                                                <li><a href="">Tea &amp; Coffee</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="#">Diet &amp; Nutrition</a></li>
                                         <li><a href="#">Tea &amp; Coffee</a></li>
-
                                     </ul>
                                 </li>
                                 <li><a href="about.html">About</a></li>
@@ -91,7 +85,8 @@
                             <span class="icon-shopping-bag"></span>
                             <span class="number">2</span>
                         </a> -->
-                        <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span class="icon-menu"></span></a>
+                        <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span
+                                class="icon-menu"></span></a>
                     </div>
                 </div>
             </div>
@@ -131,89 +126,86 @@
                 <div class="row">
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
                         <!-- <span class="tag">Sale</span> -->
-                        <a href="shop-single.html" id="product1"> <img src="assets/images/IMG_20230501_092644.jpg" alt="Image" height="370" width="250"></a>
+                        <a href="shop-single.html#product1"> <img src="assets/images/IMG_20230501_092644.jpg" alt="Image" height="370" width="250"></a>
                         <h3 class="text-dark"><a href="shop-single.html">Orthodin-SP</a></h3>
                         <!-- <p class="price"><del>95.00</del> &mdash; $55.00</p> -->
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
-                        <a href="shop-single.html" id="product2"> <img src="assets/images/IMG_20230501_092835.jpg" alt="Image" height="370" width="250"></a>
+                        <a href="shop-single.html#product2"> <img src="assets/images/IMG_20230501_092835.jpg" alt="Image" height="370" width="250"></a>
                         <h3 class="text-dark"><a href="shop-single.html">Montiford FX</a></h3>
                         <!-- <p class="price">$70.00</p> -->
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
-                        <a href="shop-single.html" id="product3"> <img src="assets/images/IMG_20230501_093025.jpg" alt="Image" height="370" width="300"></a>
-                        <h3 class="text-dark">
-                            <a href="shop-single.html">Actimed Cold and Flu</a>
-                        </h3>
+                        <a href="shop-single.html#product3"> <img src="assets/images/IMG_20230501_093025.jpg" alt="Image" height="370" width="300"></a>
+                        <h3 class="text-dark"><a href="shop-single.html">Actimed Cold and Flu</a></h3>
                         <!-- <p class="price">$120.00</p> -->
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
-
-                        <a href="shop-single.html"> <img src="assets/images/IMG_20230501_093113.jpg" alt="Image" height="370" width="250"></a>
+                        <a href="shop-single.html#product4"> <img src="assets/images/IMG_20230501_093113.jpg" alt="Image" height="370" width="250"></a>
                         <h3 class="text-dark"><a href="shop-single.html">Orthodin-MR </a></h3>
                         <!-- <p class="price"><del>45.00</del> &mdash; $20.00</p> -->
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
-                        <a href="shop-single.html"> <img src="assets/images/IMG_20230501_093143.jpg" alt="Image" height="370" width="250"></a>
+                        <a href="shop-single.html#product5"> <img src="assets/images/IMG_20230501_093143.jpg" alt="Image" height="370" width="250"></a>
                         <h3 class="text-dark"><a href="shop-single.html">Calciford-CCM</a></h3>
                         <!-- <p class="price">$38.00</p> -->
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
                         <!-- <span class="tag">Sale</span> -->
-                        <a href="shop-single.html"> <img src="assets/images/IMG_20230501_093159.jpg" alt="Image" height="370" width="250"></a>
+                        <a href="shop-single.html#product6"> <img src="assets/images/IMG_20230501_093159.jpg" alt="Image" height="370" width="250"></a>
                         <h3 class="text-dark"><a href="shop-single.html">Levoford-5</a></h3>
                         <!-- <p class="price"><del>$89</del> &mdash; $38.00</p> -->
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
                         <!-- <span class="tag">Sale</span> -->
-                        <a href="shop-single.html"> <img src="assets/images/IMG_20230501_093313.jpg" alt="Image" height="370" width="250"></a>
+                        <a href="shop-single.html#product7"> <img src="assets/images/IMG_20230501_093313.jpg" alt="Image" height="370" width="250"></a>
                         <h3 class="text-dark"><a href="shop-single.html">Chando Capsule</a></h3>
                         <!-- <p class="price"><del>95.00</del> &mdash; $55.00</p> -->
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
-                        <a href="shop-single.html"> <img src="assets/images/IMG_20230501_093422.jpg" alt="Image" height="370" width="250"></a>
+                        <a href="shop-single.html#product8"> <img src="assets/images/IMG_20230501_093422.jpg" alt="Image" height="370" width="250"></a>
                         <h3 class="text-dark"><a href="shop-single.html">Acelocox-LX</a></h3>
                         <!-- <p class="price">$70.00</p> -->
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
-                        <a href="shop-single.html"> <img src="assets/images/IMG_20230501_093447.jpg" alt="Image" height="370" width="250"></a>
+                        <a href="shop-single.html#product9"> <img src="assets/images/IMG_20230501_093447.jpg" alt="Image" height="370" width="250"></a>
                         <h3 class="text-dark"><a href="shop-single.html">Acelocox-MR</a></h3>
                         <!-- <p class="price">$120.00</p> -->
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
 
-                        <a href="shop-single.html"> <img src="assets/images/IMG_20230501_093626.jpg" alt="Image" height="370" width="250"></a>
+                        <a href="shop-single.html#product10"> <img src="assets/images/IMG_20230501_093626.jpg" alt="Image" height="370" width="250"></a>
                         <h3 class="text-dark"><a href="shop-single.html">Rabi-DSR</a></h3>
                         <!-- <p class="price"><del>45.00</del> &mdash; $20.00</p> -->
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
-                        <a href="shop-single.html"> <img src="assets/images/IMG_20230501_093707.jpg" alt="Image" height="370" width="250"></a>
+                        <a href="shop-single.html#product11"> <img src="assets/images/IMG_20230501_093707.jpg" alt="Image" height="370" width="250"></a>
                         <h3 class="text-dark"><a href="shop-single.html">Protopum-DSR</a></h3>
                         <!-- <p class="price">$38.00</p> -->
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
                         <!-- <span class="tag">Sale</span> -->
-                        <a href="shop-single.html"> <img src="assets/images/IMG_20230501_094722.jpg" alt="Image" height="370" width="250"></a>
+                        <a href="shop-single.html#product12"> <img src="assets/images/IMG_20230501_094722.jpg" alt="Image" height="370" width="250"></a>
                         <h3 class="text-dark"><a href="shop-single.html">Mayocaine-Gel</a></h3>
                         <!-- <p class="price"><del>$89</del> &mdash; $38.00</p> -->
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
                         <!-- <span class="tag">Sale</span> -->
-                        <a href="shop-single.html"> <img src="assets/images/IMG_20230501_094151.jpg" alt="Image" height="370" width="250"></a>
+                        <a href="shop-single.html#product13"> <img src="assets/images/IMG_20230501_094151.jpg" alt="Image" height="370" width="250"></a>
                         <h3 class="text-dark">
                             <a href="shop-single.html">Utrine Tonic</a>
                         </h3>
                         <!-- <p class="price"><del>95.00</del> &mdash; $55.00</p> -->
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
-                        <a href="shop-single.html"> <img src="assets/images/IMG_20230501_094602.jpg" alt="Image" height="370" width="250"></a>
+                        <a href="shop-single.html#product14"> <img src="assets/images/IMG_20230501_094602.jpg" alt="Image" height="370" width="250"></a>
                         <h3 class="text-dark">
                             <a href="shop-single.html">Heptic Gard</a>
                         </h3>
                         <!-- <p class="price">$70.00</p> -->
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
-                        <a href="shop-single.html"> <img src="assets/images/IMG_20230501_094648.jpg" style="transform: rotate(90deg);" alt="Image" height="370" width="300"></a>
+                        <a href="shop-single.html#product15"> <img src="assets/images/IMG_20230501_094648.jpg" style="transform: rotate(90deg);" alt="Image" height="370" width="300"></a>
                         <h3 class="text-dark">
                             <a href="shop-single.html">Milotonic Syrup</a>
                         </h3>
@@ -221,113 +213,175 @@
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
 
-                        <a href="shop-single.html"> <img src="assets/images/IMG_20230501_094859.jpg" alt="Image" height="370" width="250"></a>
+                        <a href="shop-single.html#product16"> <img src="assets/images/IMG_20230501_094859.jpg" alt="Image" height="370" width="250"></a>
                         <h3 class="text-dark"><a href="shop-single.html">Picoxit </a></h3>
                         <!-- <p class="price"><del>45.00</del> &mdash; $20.00</p> -->
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
-                        <a href="shop-single.html"> <img src="assets/images/IMG_20230501_095042.jpg" alt="Image" height="370" width="250"></a>
+                        <a href="shop-single.html#product17"> <img src="assets/images/IMG_20230501_095042.jpg" alt="Image" height="370" width="250"></a>
                         <h3 class="text-dark"><a href="shop-single.html">Calciford Nano</a></h3>
                         <!-- <p class="price">$38.00</p> -->
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
                         <!-- <span class="tag">Sale</span> -->
-                        <a href="shop-single.html"> <img src="assets/images/IMG_20230501_095259.jpg" alt="Image" height="370" width="250"></a>
+                        <a href="shop-single.html#product18"> <img src="assets/images/IMG_20230501_095259.jpg" alt="Image" height="370" width="250"></a>
                         <h3 class="text-dark"><a href="shop-single.html">Orthodin Pain Relief (Roll-On)</a></h3>
                         <!-- <p class="price"><del>$89</del> &mdash; $38.00</p> -->
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
                         <!-- <span class="tag">Sale</span> -->
-                        <a href="shop-single.html"> <img src="assets/images/IMG_20230501_095408.jpg" alt="Image" height="370" width="250"></a>
+                        <a href="shop-single.html#product19"> <img src="assets/images/IMG_20230501_095408.jpg" alt="Image" height="370" width="250"></a>
                         <h3 class="text-dark"><a href="shop-single.html">Skincort Cream</a></h3>
                         <!-- <p class="price"><del>95.00</del> &mdash; $55.00</p> -->
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
-                        <a href="shop-single.html"> <img src="assets/images/IMG_20230501_095453.jpg" alt="Image" height="370" width="250"></a>
+                        <a href="shop-single.html#product20"> <img src="assets/images/IMG_20230501_095453.jpg" alt="Image" height="370" width="250"></a>
                         <h3 class="text-dark"><a href="shop-single.html">Calciford Sachets</a></h3>
                         <!-- <p class="price">$70.00</p> -->
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
-                        <a href="shop-single.html"> <img src="assets/images/IMG_20230501_095520.jpg" alt="Image" height="370" width="250"></a>
+                        <a href="shop-single.html#product21"> <img src="assets/images/IMG_20230501_095520.jpg" alt="Image" height="370" width="250"></a>
                         <h3 class="text-dark"><a href="shop-single.html">Skin-Cort Tea Tree Soap</a></h3>
                         <!-- <p class="price">$120.00</p> -->
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
 
-                        <a href="shop-single.html"> <img src="assets/images/IMG_20230501_095557.jpg" alt="Image" height="370" width="250"></a>
+                        <a href="shop-single.html#product22"> <img src="assets/images/IMG_20230501_095557.jpg" alt="Image" height="370" width="250"></a>
                         <h3 class="text-dark"><a href="shop-single.html">Chiched-PT (Animal Soap)</a></h3>
                         <!-- <p class="price"><del>45.00</del> &mdash; $20.00</p> -->
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
-                        <a href="shop-single.html"> <img src="assets/images/IMG_20230501_095624.jpg" alt="Image" height="370" width="250"></a>
+                        <a href="shop-single.html#product23"> <img src="assets/images/IMG_20230501_095624.jpg" alt="Image" height="370" width="250"></a>
                         <h3 class="text-dark"><a href="shop-single.html">Ford-Tears</a></h3>
                         <!-- <p class="price">$38.00</p> -->
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
                         <!-- <span class="tag">Sale</span> -->
-                        <a href="shop-single.html"> <img src="assets/images/IMG_20230501_095654.jpg" style="transform: rotate(90deg);" alt="Image" height="370" width="250"></a>
+                        <a href="shop-single.html#product24"> <img src="assets/images/IMG_20230501_095654.jpg" style="transform: rotate(90deg);" alt="Image" height="370" width="250"></a>
                         <h3 class="text-dark"><a href="shop-single.html">Feri-XT</a></h3>
                         <!-- <p class="price"><del>$89</del> &mdash; $38.00</p> -->
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
                         <!-- <span class="tag">Sale</span> -->
-                        <a href="shop-single.html"> <img src="assets/images/IMG_20230501_095711.jpg" style="transform: rotate(270deg);" alt="Image" height="370" width="250"></a>
-                        <h3 class="text-dark">
-                            <a href="shop-single.html">Calciford-Strong</a>
-                        </h3>
+                        <a href="shop-single.html#product25"> <img src="assets/images/IMG_20230501_095711.jpg" style="transform: rotate(270deg);" alt="Image" height="370" width="250"></a>
+                        <h3 class="text-dark"> <a href="shop-single.html">Calciford-Strong</a></h3>
                         <!-- <p class="price"><del>$89</del> &mdash; $38.00</p> -->
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
                         <!-- <span class="tag">Sale</span> -->
-                        <a href="shop-single.html"> <img src="assets/images/IMG_20230501_101706.jpg" alt="Image" style="transform: rotate(180deg);" height="370" width="250"></a>
+                        <a href="shop-single.html#product26"> <img src="assets/images/IMG_20230501_101706.jpg" alt="Image" style="transform: rotate(180deg);" height="370" width="250"></a>
                         <h3 class="text-dark"><a href="shop-single.html">Rabisam-Ls</a></h3>
                         <!-- <p class="price"><del>95.00</del> &mdash; $55.00</p> -->
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
-                        <a href="shop-single.html"> <img src="assets/images/IMG_20230501_101825.jpg" alt="Image" height="370" width="250"></a>
+                        <a href="shop-single.html#product27"> <img src="assets/images/IMG_20230501_101825.jpg" alt="Image" height="370" width="250"></a>
                         <h3 class="text-dark">
                             <a href="shop-single.html">Uric Control Syrup</a>
                         </h3>
                         <!-- <p class="price">$70.00</p> -->
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
-                        <a href="shop-single.html"> <img src="assets/images/IMG_20230501_101915.jpg" alt="Image" height="370" width="250"></a>
+                        <a href="shop-single.html#product28"> <img src="assets/images/IMG_20230501_101915.jpg" alt="Image" height="370" width="250"></a>
                         <h3 class="text-dark"><a href="shop-single.html">Medkoff-LS</a></h3>
                         <!-- <p class="price">$120.00</p> -->
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
 
-                        <a href="shop-single.html"> <img src="assets/images/IMG_20230501_101948.jpg" alt="Image" height="370" width="250"></a>
+                        <a href="shop-single.html#product29"> <img src="assets/images/IMG_20230501_101948.jpg" alt="Image" height="370" width="250"></a>
                         <h3 class="text-dark"><a href="shop-single.html">Ribbom Syrup</a></h3>
                         <!-- <p class="price"><del>45.00</del> &mdash; $20.00</p> -->
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
-                        <a href="shop-single.html"> <img src="assets/images/IMG_20230501_102016.jpg" alt="Image" height="370" width="250"></a>
+                        <a href="shop-single.html#product30"> <img src="assets/images/IMG_20230501_102016.jpg" alt="Image" height="370" width="250"></a>
                         <h3 class="text-dark"><a href="shop-single.html">Hadzod Syrup</a></h3>
                         <!-- <p class="price">$38.00</p> -->
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
                         <!-- <span class="tag">Sale</span> -->
-                        <a href="shop-single.html"> <img src="assets/images/IMG_20230501_102127.jpg" alt="Image" height="370" width="250"></a>
+                        <a href="shop-single.html#product31"> <img src="assets/images/IMG_20230501_102127.jpg" alt="Image" height="370" width="250"></a>
                         <h3 class="text-dark"><a href="shop-single.html">Calciford Syrup</a></h3>
                         <!-- <p class="price"><del>$89</del> &mdash; $38.00</p> -->
                     </div>
                 </div>
-                <!-- <div class="row mt-5">
+                <div class="row mt-5">
                     <div class="col-md-12 text-center">
                         <div class="site-block-27">
-                            <ul>
-                                <li><a href="#">&lt;</a></li>
-                                <li class="active"><span>1</span></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li><a href="#">&gt;</a></li>
+                            <ul id="pagination">
+                                <li class="no-arrow"><a href="#">&lt;</a></li>
+                                <!-- <li class="active"><a href="#" class="page-link">1</a></li> -->
+                                <li class="no-arrow"><a href="">&gt;</a></li>
                             </ul>
                         </div>
                     </div>
-                </div> -->
+                </div>
+
+                <script>
+                    // Specify the total number of items and items per page
+                    const totalItems = document.getElementsByClassName("item").length;
+                    const itemsPerPage = 9;
+
+                    // Calculate the number of pages
+                    const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+                    // Get the pagination element
+                    const pagination = document.getElementById("pagination");
+
+                    // Generate the pagination links
+                    for (let i = 1; i <= totalPages; i++) {
+                        const li = document.createElement("li");
+                        const a = document.createElement("a");
+                        a.href = "";
+                        a.textContent = i;
+                        li.appendChild(a);
+                        pagination.insertBefore(li, pagination.lastElementChild);
+                    }
+
+                    // Handle pagination click events
+                    const paginationLinks = pagination.getElementsByTagName("a");
+                    for (let i = 0; i < paginationLinks.length; i++) {
+                        paginationLinks[i].addEventListener("click", function(e) {
+                            e.preventDefault();
+                            const pageNumber = parseInt(this.textContent);
+                            showPage(pageNumber);
+
+                            // Update the active pagination link
+                            const activeLink = pagination.querySelector(".active");
+                            if (activeLink) {
+                                activeLink.classList.remove("active");
+                            }
+                            this.parentNode.classList.add("active");
+
+                            // Scroll to the top of the page
+                            window.scrollTo({
+                                top: 0,
+                                behavior: "smooth"
+                            });
+                        });
+                    }
+
+                    // Function to show the items for the specified page
+                    function showPage(pageNumber) {
+                        const itemList = document.getElementsByClassName("item");
+
+                        // Hide all items
+                        for (let i = 0; i < itemList.length; i++) {
+                            itemList[i].style.display = "none";
+                        }
+
+                        // Calculate the start and end index of items to display
+                        const startIndex = (pageNumber - 1) * itemsPerPage;
+                        const endIndex = startIndex + itemsPerPage;
+
+                        // Show the items for the current page
+                        for (let i = startIndex; i < endIndex && i < itemList.length; i++) {
+                            itemList[i].style.display = "block";
+                        }
+                    }
+
+                    // Show the first page initially
+                    showPage(1);
+                </script>
+
             </div>
         </div>
 
@@ -380,28 +434,40 @@
                     </div>
 
                     <div class="col-md-6 col-lg-3">
-                        <div class="block-5 mb-5">
+                        <div class="block-5 mb-5 cntctinf">
                             <h3 class="footer-heading mb-4">Contact Info</h3>
                             <ul class="list-unstyled">
-                                <li class="address">Registered Office : Tohana Road Ratia district Fathehbad (Haryana) -125051</li>
+                                <li class="address">Registered Office : Tohana Road Ratia district Fathehbad (Haryana) -125051
+                                </li>
                                 <li>Co-operative Office : Sco 4, Sigma City Complex, Lohgarh dist S.A.S.Nagar (Mohali) Punjab -140603
                                 </li>
-                                <li class="phone"><a href="tel:+919996795138"> +91 99967-95138 / +91 94674-95138</a></li>
+                                <li class="phone"><a href="tel:+919996795138"> +91 99967-95138 / +91 94674-95138</a>
+                                </li>
                                 </li>
                                 <li class="email">upcpharma01@gmail.com</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="row pt-5 mt-5 text-center">
+                <div class="row pt-5 mt-5 ">
                     <div class="col-md-12">
                         <p>
-                            Copyright &copy;
-                            <script>
-                                document.write(new Date().getFullYear());
-                            </script> All rights reserved </p>
+                            <span>
+                                Copyright &copy;
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script> All rights reserved
+                            </span>
+                            <span class="social-icons">
+                                <a href="https://www.facebook.com/your-facebook-page" target="_blank"><i
+                                        class="fab fa-facebook"></i></a>
+                                <a href="https://www.twitter.com/your-twitter-profile" target="_blank"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/your-instagram-profile" target="_blank"><i
+                                        class="fab fa-instagram"></i></a>
+                            </span>
+                        </p>
                     </div>
-
                 </div>
             </div>
         </footer>
@@ -414,7 +480,6 @@
     <script src="js/owl.carousel.min.js "></script>
     <script src="js/jquery.magnific-popup.min.js "></script>
     <script src="js/aos.js "></script>
-
     <script src="js/main.js "></script>
 
 </body>
