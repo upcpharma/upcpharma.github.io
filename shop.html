@@ -20,6 +20,17 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#product1, #product2, #product3').click(function(event) {
+                event.preventDefault();
+                window.location.href = $(this).attr("href");
+            });
+        });
+    </script>
+
 </head>
 
 <body>
@@ -52,7 +63,7 @@
                                 <li><a href="index.html">Home</a></li>
                                 <li class="active"><a href="shop.html">Products</a></li>
                                 <li class="has-children">
-                                    <a href="#">Dropdown</a>
+                                    <a href="#">Health Products</a>
                                     <ul class="dropdown">
                                         <li><a href="#">Supplements</a></li>
                                         <li class="has-children">
@@ -74,14 +85,14 @@
                             </ul>
                         </nav>
                     </div>
-                    <!-- <div class="icons">
-                        <a href="#" class="icons-btn d-inline-block js-search-open"><span class="icon-search"></span></a>
+                    <div class="icons">
+                        <!-- <a href="#" class="icons-btn d-inline-block js-search-open"><span class="icon-search"></span></a>
                         <a href="cart.html" class="icons-btn d-inline-block bag">
                             <span class="icon-shopping-bag"></span>
                             <span class="number">2</span>
-                        </a>
+                        </a> -->
                         <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span class="icon-menu"></span></a>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -120,17 +131,17 @@
                 <div class="row">
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
                         <!-- <span class="tag">Sale</span> -->
-                        <a href="shop-single.html"> <img src="assets/images/IMG_20230501_092644.jpg" alt="Image" height="370" width="250"></a>
+                        <a href="shop-single.html" id="product1"> <img src="assets/images/IMG_20230501_092644.jpg" alt="Image" height="370" width="250"></a>
                         <h3 class="text-dark"><a href="shop-single.html">Orthodin-SP</a></h3>
                         <!-- <p class="price"><del>95.00</del> &mdash; $55.00</p> -->
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
-                        <a href="shop-single.html"> <img src="assets/images/IMG_20230501_092835.jpg" alt="Image" height="370" width="250"></a>
+                        <a href="shop-single.html" id="product2"> <img src="assets/images/IMG_20230501_092835.jpg" alt="Image" height="370" width="250"></a>
                         <h3 class="text-dark"><a href="shop-single.html">Montiford FX</a></h3>
                         <!-- <p class="price">$70.00</p> -->
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center item mb-4">
-                        <a href="shop-single.html"> <img src="assets/images/IMG_20230501_093025.jpg" alt="Image" height="370" width="300"></a>
+                        <a href="shop-single.html" id="product3"> <img src="assets/images/IMG_20230501_093025.jpg" alt="Image" height="370" width="300"></a>
                         <h3 class="text-dark">
                             <a href="shop-single.html">Actimed Cold and Flu</a>
                         </h3>
