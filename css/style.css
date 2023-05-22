@@ -1918,3 +1918,13 @@ h3.text-dark {
 #pagination .no-arrow a {
     display: none;
 }
+
+.site-block-27 li a {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.site-block-27 li.active a {
+    background-color: #333;
+    color: #fff;
+}
